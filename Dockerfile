@@ -5,6 +5,7 @@ RUN sed -i s/security.ubuntu.com/mirror.kakao.com/g /etc/apt/sources.list
 
 RUN apt-get update -y && apt-get upgrade -y
 RUN apt-get install -y \
+    checksec \
     g++ \
     g++-multilib \
     gcc \
