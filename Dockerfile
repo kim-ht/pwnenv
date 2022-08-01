@@ -1,5 +1,7 @@
 FROM ubuntu:22.10
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN sed -i s/archive.ubuntu.com/mirror.kakao.com/g /etc/apt/sources.list
 RUN sed -i s/security.ubuntu.com/mirror.kakao.com/g /etc/apt/sources.list
 
