@@ -17,6 +17,7 @@ RUN apt-get install -y \
     git \
     python3 \
     python3-pip \
+    tmux \
     vim
 
 RUN pip3 install --upgrade pip
