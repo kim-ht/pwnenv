@@ -16,6 +16,7 @@ RUN apt-get install -y \
     gcc-multilib \
     gdb \
     git \
+    htop \
     python3 \
     python3-pip \
     tmux \
