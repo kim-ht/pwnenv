@@ -1,5 +1,6 @@
-FROM ubuntu:22.10
+#FROM ubuntu:22.10
 #FROM ubuntu:focal-20220113
+FROM ubuntu:20.04@sha256:fd92c36d3cb9b1d027c4d2a72c6bf0125da82425fc2ca37c414d4f010180dc19
 
 ENV DEBIAN_FRONTEND=noninteractive
 
