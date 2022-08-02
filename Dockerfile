@@ -19,11 +19,14 @@ RUN apt-get install -y \
     htop \
     python3 \
     python3-pip \
+    ruby \
     tmux \
     vim
 
 RUN pip3 install --upgrade pip
 RUN pip3 install --upgrade pwntools
+
+RUN gem install one_gadget
 
 # install pwndbg
 WORKDIR /root
