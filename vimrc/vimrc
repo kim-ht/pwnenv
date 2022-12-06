@@ -1,0 +1,27 @@
+set ruler
+set nu
+set sw=4
+set ts=4
+set expandtab
+set hlsearch
+if has("syntax")
+    syntax on
+endif
+autocmd filetype make set noexpandtab
+"autocmd filetype python set ts=2 sw=2
+autocmd filetype cpp set ts=2 sw=2
+"autocmd filetype sh set ts=2 sw=2
+autocmd filetype html set ts=2 sw=2
+autocmd filetype css set ts=2 sw=2
+set colorcolumn=80
+highlight colorcolumn ctermbg=1
+autocmd filetype tex set spell
+set encoding=utf-8
+set fileencodings=utf-8,cp949
+
+"The following command puts the contents of ~/from_pwn.txt
+"under the cursor when the user types ":from_pwn" in normal mode.
+command Fp :r ~/.vimtxt/from_pwn.txt | w | !chmod 700 %
+command Pru :r ~/.vimtxt/p_recvuntil.txt
+command Psl :r ~/.vimtxt/p_sendline.txt
+command Ps :r ~/.vimtxt/p_send.txt
