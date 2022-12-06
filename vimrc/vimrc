@@ -25,3 +25,4 @@ command Fp :r ~/.vimtxt/from_pwn.txt | w | !chmod 700 %
 command Pru :r ~/.vimtxt/p_recvuntil.txt
 command Psl :r ~/.vimtxt/p_sendline.txt
 command Ps :r ~/.vimtxt/p_send.txt
+command Gdb :r ~/.vimtxt/gdb_attach_p.txt
