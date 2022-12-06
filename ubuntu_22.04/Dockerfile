@@ -38,7 +38,10 @@ RUN git clone https://github.com/pwndbg/pwndbg
 WORKDIR /root/git/pwndbg
 RUN ./setup.sh
 
-# set .vimrc
+# create ctf directory
 WORKDIR /root
+RUN mkdir git
+
+# set .vimrc
 COPY ./vimrc/vimrc .vimrc
 COPY ./vimrc/vimtxt .vimtxt
