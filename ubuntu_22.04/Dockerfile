@@ -18,6 +18,7 @@ RUN apt-get install -y \
     gdb \
     git \
     htop \
+    netcat \
     python3 \
     python3-pip \
     ruby \
