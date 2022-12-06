@@ -40,7 +40,7 @@ RUN ./setup.sh
 
 # create ctf directory
 WORKDIR /root
-RUN mkdir git
+RUN mkdir ctf
 
 # set .vimrc
 COPY ./vimrc/vimrc .vimrc
